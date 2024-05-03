@@ -1,4 +1,4 @@
-# Meals APp - Explore some Meals with me!
+# Meals App - Explore some Meals with me!
 <p>Welcome to Meals, your go-to app for quick and delicious meal ideas! Whether you're a seasoned chef or just getting started in the kitchen, Simple Meals has you covered with a variety of easy-to-follow recipes that are perfect for any occasion. From breakfast to dinner and everything in between, our app provides step-by-step instructions, handy cooking tips, and customizable features to suit your taste preferences and dietary needs. Say goodbye to mealtime stress and hello to simplicity and satisfaction with  Meals!</p>
 
 ---
