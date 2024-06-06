@@ -2,11 +2,25 @@ import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { CATEGORIES } from '../data/dummy-data';
 import CategoryGridTile from '../components/CategoryGridTile/CategoryGridTile';
 
-const renderCategoryItem = (itemData) => (
-  <CategoryGridTile title={itemData.item.title} color={itemData.item.color} />
-);
 
-export default function CategoriesScreen() {
+export default function CategoriesScreen({ navigation }) {
+
+  const renderCategoryItem = (itemData) => {
+    const handlePress = () => {
+      navigation.navigate('MealsOverviewScreen', {
+        categoryId: itemData.item.id
+      })
+    }
+  
+    return(
+      <CategoryGridTile 
+      title={itemData.item.title} 
+      color={itemData.item.color} 
+      onPress={handlePress}
+    />
+  )};
+
+
   return (
     <FlatList
       data={CATEGORIES}
